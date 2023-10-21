@@ -1,0 +1,7 @@
+<p>changecolor works!</p>
+
+<div>
+    <input type="text" [(ngModel)]="couleur" placeholder="Saisissez une couleur" />
+    <button (click)="resetCouleur()">Réinitialiser la couleur</button>
+</div>
+<div [style.background-color]="couleur" class="maDiv">Mon Div</div>
